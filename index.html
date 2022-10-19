@@ -6,15 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script src="./index.js" type="module"></script>
+    <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
 </head>
 <body>
-    <div id="loader"></div>  
+    <nav id="navbar" class="dark j-around flex vj-center">
+        <span class="l-space uppered">IA Hands gesture recognition</span>
+    </nav>
+    <div class="container">
+        <div class="flex w-100 j-center mt-3">
+            <canvas id="video-out" width="720" height="480" ></canvas>
+            <div id="loader"></div>  
+        </div>
+        <p id="status"></p>
 
-    <p id="status">
+        <video hidden id="video-input" width="720" height="480" autoplay></video>        
+    </div>
 
-    </p>
-    <canvas id="video-out" width="720" height="480" ></canvas>
-    <video hidden id="video-input" width="720" height="480" autoplay></video>
+
+
+
+    <script src="./index.js" type="module"></script>
 </body>
 </html>

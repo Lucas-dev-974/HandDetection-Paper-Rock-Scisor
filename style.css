@@ -1,17 +1,52 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito';
+}
+
+.flex{ display: flex; }
+.j-center{ justify-content: center; }
+.j-around{ justify-content: space-around; }
+.vj-center{ align-items: center; }
+
+.dark{
+  background-color: #212121;
+  color: white;
+}.dark-1{ background-color: #181818; }
+
+#navbar{
+  height: 60px;
+  width: 100vw;
+}
+
+.container{
+  width: 80%;
+  margin: 0 auto;
+  height: calc(100vh - 60px);
+}
+.l-space{ letter-spacing: 4px;}
+.uppered{ text-transform: uppercase; }
+
+.w-100{ width: 100%; } 
+
+.mt-3{
+  margin-top: 15px;
+}
 #loader {
-    border: 10px solid #f3f3f3; /* Light grey */
-    border-top: 10px solid #3498db; /* Blue */
+    border: 5px solid #f3f3f3; /* Light grey */
+    border-top: 5px solid #3498db; /* Blue */
     border-radius: 50%;
-    width: 120px;
-    height: 120px;
+    width: 50px;
+    height: 50px;
     animation: spin 2s linear infinite;
     position: absolute;
-    left: calc((780px / 2) - 80px);
-    top: calc(480px / 2 - 80px);
+    left: calc(50% - 25px);
+    top: calc(50% - 25px);
   }
 
   canvas{
     background-color: rgb(31, 31, 31);
+    
   }
 
   @keyframes spin {
