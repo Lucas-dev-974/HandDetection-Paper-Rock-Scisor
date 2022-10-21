@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Le site a NoNo</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-cyborg-gaming.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+</head>
+<body>
+      <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="index.html" class="logo">
+                            <img src="assets/images/logo.png" alt="" height="">
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Search End ***** -->
+                        <div class="search-input">
+                        <form id="search" action="#">
+                            <input type="text" placeholder="Type Something" id='searchText' name="searchKeyword" onkeypress="handle" />
+                            <i class="fa fa-search"></i>
+                        </form>
+                        </div>
+                        <!-- ***** Search End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li><a href="index.html" class="active">Home</a></li>
+                            <li><a href="browse.html">Browse</a></li>
+                            <li><a href="details.html">Details</a></li>
+                            <li><a href="streams.html">Streams</a></li>
+                            <li><a href="profile.html">Profile <img src="assets/images/profile-header.jpg" alt=""></a></li>
+                        </ul>   
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="page-content text-white">
+              <h3>Jeux Shifumi</h3> 
+              <p style="color: white  ;">Pour jouer au jeux veuillez <strong style="color: #e75e8d ;">maintenir la position OK avec une main</strong>   puis faire le signe de votre choix</p>
+               <div class="d-flex">
+                    <div class="">
+                        <div class="flex w-100 j-center mt-3">
+                            <canvas id="video-out" width="720" height="480" ></canvas>
+                            <div id="loader"></div>  
+                        </div>
+                        <div class="text-white" style="color: white;">
+                            <p id="status" style="color: white;"></p>
+                            <p style="color: white;">Score du joueur: <span id="scorePlayer"></span></p>
+                            <p style="color: white;">Score du pc:    <span id="scorecomputer"></span></p>
+                        </div>
+
+                        <video hidden id="video-input" width="720" height="480" autoplay></video>    
+                        
+                        <div id="computerChoiceImg">
+                            
+                        </div>
+                    </div>  
+
+                    <div class="pt-3 px-5">
+                        <label for="">Signe ok</label>
+                        <img class="my-5" src="/medias/oksigne.png" alt="Ok signe" width="30" style="width: 50px;">
+                        <br>
+                        <label for="">Signe Pierre</label>
+                        <img class="my-5" src="/medias/rock.png" alt="Ok signe" width="30" style="width: 50px;">
+                        <br>
+                        <label for="">Signe feuille</label>
+                        <img class="my-5" src="/medias/paper.png" alt="Ok signe" width="30" style="width: 50px;">
+                        <br>
+                        <label for="">Signe ciseaux</label>
+                        <img class="my-5" src="/medias/scisor.png" alt="Ok signe" width="30" style="width: 50px;">
+                    </div>
+               </div>
+
+            
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script src="./index.3d214d75.js"></script>
+      <style>
+        #computerChoiceImg{
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+      </style>
+</body>
+</html>
